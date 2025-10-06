@@ -1,26 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-quicksand);
+}
+/* 
+.bg-hamburger-menu {
+  @apply bg- px-4 py-2;
+} */
+
+.btn_white {
+  @apply border bg-white px-4 py-3 text-green-50;
+}
+.btn_white_text {
+  @apply border-white bg-white px-4 py-3 text-[#141414];
+}
+.btn_green {
+  @apply border-green-50 bg-[#30AF5B] px-4 py-2 text-white;
+}
+.btn_dark_green {
+  @apply bg-[#292c27] px-4 py-2 text-white transition-all hover:bg-black;
+}
+.btn_dark_green_outline {
+  @apply border-[#a2a2a2] bg-[#292c27] px-4 py-2 text-white;
+}
+
+.max-container {
+  @apply mx-auto max-w-[1440px];
+}
+
+.padding-container {
+  @apply px-6 lg:px-20 3xl:px-0;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
+
+.flexStart {
+  @apply flex items-center justify-start;
+}
+
+.flexEnd {
+  @apply flex items-center justify-end;
+}
+
+@theme {
+  --breakpoint-3xl: 1680px;
+  --breakpoint-4xl: 2200px;
+  --breakpoint-xs: 400px;
+  --breakpoint-10xl: 1512px;
+  --background-image-bg-img-1: url("/img-1.png");
+  --background-image-bg-img-2: url("/img-2.png");
+  --color-green-50: #30af5b;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* FONTS */
+.regular-64 {
+  @apply text-[64px] font-[400] leading-[120%];
+}
+
+.regular-40 {
+  @apply text-[40px] font-[400] leading-[120%];
+}
+
+.regular-32 {
+  @apply text-[32px] font-[400];
+}
+
+.regular-24 {
+  @apply text-[24px] font-[600];
+}
+
+.regular-20 {
+  @apply text-[20px] font-[400];
+}
+
+.regular-18 {
+  @apply text-[18px] font-[400];
+}
+
+.regular-16 {
+  @apply text-[16px] font-[400];
+}
+
+.regular-14 {
+  @apply text-[14px] font-[500];
+}
+
+.medium-14 {
+  @apply text-[14px] font-[600];
+}
+
+.bold-88 {
+  @apply text-[88px] font-[700] leading-[120%];
+}
+
+.bold-64 {
+  @apply text-[64px] font-[700] leading-[120%];
+}
+
+.bold-52 {
+  @apply text-[52px] font-[700] leading-[120%];
+}
+
+.bold-40 {
+  @apply text-[40px] font-[700] leading-[120%];
+}
+
+.bold-32 {
+  @apply text-[32px] font-[700] leading-[120%];
+}
+
+.bold-20 {
+  @apply text-[20px] font-[700];
+}
+
+.bold-18 {
+  @apply text-[18px] font-[700];
+}
+
+.bold-16 {
+  @apply text-[16px] font-[700];
 }
