@@ -9,20 +9,14 @@ const Hero = () => {
       {/* Kiri */}
       <div className="relative z-10 md:w-1/2 ">
         <Image src="/camp.svg" alt="camp" width={60} height={60} />
-        <h1 className="text-3xl lg:text-4xl font-poppins font-bold my-2 max-w-[370px] uppercase">mari berkemah bersama keluarga tercinta</h1>
-        <p className="text-green-50 font-medium lg:max-w-[450px] mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat odio quis pariatur quae vel deleniti ut optio?</p>
+        <h1 className="text-3xl lg:text-4xl font-poppins font-bold my-2 max-w-[370px] uppercase text-green-50">mari berkemah bersama keluarga tercinta</h1>
+        <p className="text-gray-600 font-medium lg:max-w-[460px] mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat odio quis pariatur quae vel deleniti ut optio?</p>
         <div className="my-4 flex flex-wrap gap-2">
           <div className="flex items-center gap-2">
             {Array(6)
               .fill(1)
               .map((_, index) => (
-                <Image 
-                src="/star.svg" 
-                key={index} 
-                alt="star" 
-                width={24} 
-                height={24} 
-                />
+                <Image src="/star.svg" key={index} alt="star" width={25} height={25} />
               ))}
           </div>
           <p className="font-semibold text-gray-500">
@@ -43,13 +37,9 @@ const Hero = () => {
           <div className="flex flex-col">
             <div className="flexBetween">
               <p className="text-white font-semibold text-lg capitalize">location</p>
-              <Image src="/close.svg" alt="close" width={23} 
-              height={23} 
-              loading="lazy" 
-              className="cursor-pointer" />
+              <Image src="/close.svg" alt="close" width={23} height={23} loading="lazy" className="cursor-pointer" />
             </div>
             <p className="text-white font-semibold text-lg">Krui, Pesisir-Barat</p>
-
             <div className="flex justify-between">
               <div className="flex flex-col">
                 <p className="text-white block font-medium">ketinggian</p>

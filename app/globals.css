@@ -57,6 +57,7 @@ body {
   --background-image-bg-img-1: url("/img-1.png");
   --background-image-bg-img-2: url("/img-2.png");
   --color-green-50: #30af5b;
+  --background-image-feature-bg: url("/feature-bg.png");
 }
 
 .hide-scrollbar {
@@ -131,4 +132,20 @@ body {
 
 .bold-16 {
   @apply text-[16px] font-[700];
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Feature */
+.feature-phone {
+  @apply absolute top-[15%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
 }
