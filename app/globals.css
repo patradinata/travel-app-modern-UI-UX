@@ -58,6 +58,7 @@ body {
   --background-image-bg-img-2: url("/img-2.png");
   --color-green-50: #30af5b;
   --background-image-feature-bg: url("/feature-bg.png");
+  --background-image-pattern: url("/pattern.png");
 }
 
 .hide-scrollbar {
@@ -148,4 +149,8 @@ body {
 /* Feature */
 .feature-phone {
   @apply absolute top-[15%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+}
+
+.get-app {
+  @apply mx-auto max-w-[1440px] relative flex w-full  flex-col justify-between gap-32 overflow-hidden  bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] rounded-2xl;
 }
