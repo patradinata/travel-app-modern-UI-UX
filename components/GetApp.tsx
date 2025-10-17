@@ -14,7 +14,6 @@ const GetApp = () => {
             <Button type="button" title="Play Store" icon="/android.svg" variant="btn_dark_green_outline" />
           </div>
         </div>
-
         <div className="flex flex-1 items-center justify-end">
           <Image src="/phones.png" alt="phones" width={550} height={860} />
         </div>
